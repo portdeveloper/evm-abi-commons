@@ -60,15 +60,15 @@ byproduct of resolution (every verified contract the engine resolves is
 harvested; every decompile can mint keccak-proven names):
 
 ```bash
-curl https://gulltoppr.fly.dev/v1/lookup/0xa9059cbb        # one selector (or 32-byte topic0)
-curl https://gulltoppr.fly.dev/v1/registry/stats           # current counts
-curl https://gulltoppr.fly.dev/v1/registry/export          # full JSONL dump (this dataset)
+curl https://api.gulltoppr.dev/v1/lookup/0xa9059cbb        # one selector (or 32-byte topic0)
+curl https://api.gulltoppr.dev/v1/registry/stats           # current counts
+curl https://api.gulltoppr.dev/v1/registry/export          # full JSONL dump (this dataset)
 ```
 
 ## Regenerating
 
 ```bash
-curl -s https://gulltoppr.fly.dev/v1/registry/export -o data/all.jsonl
+curl -s https://api.gulltoppr.dev/v1/registry/export -o data/all.jsonl
 # split by kind however you like; this repo splits into functions/events/errors
 ```
 
